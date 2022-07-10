@@ -1,18 +1,159 @@
       <!-- nav -->
       <%- include('partials/navbar.ejs'); %> 
       <!-- end nav -->
-      <div class="relative md:ml-64 bg-blueGray-50">
+      <div class="relative md:ml-64 ">
         <!-- heard perfil -buscar -->
-        <%- include('partials/perfilBusca.ejs'); %> 
+       
         <!-- end heard perfil -buscar -->
         <!-- Header -->
-        <div class="relative  md:pt-32  flex items-start pt-12 pb-56 m-2 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl " style="background-image: url('https://cdlima.org.pe/wp-content/uploads/2021/08/cdlima-1.png')  ">
+        <div class="relative  md:pt-0  flex items-start pb-56 m-2 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl " style="background-image: url('https://cdlima.org.pe/wp-content/uploads/2021/08/cdlima-1.png')  ">
           <span class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-cyan-600 opacity-60"></span>
-          <div class="px-4 md:px-10 mx-auto w-full">
+          <div class=" mx-auto w-full">
+            <div
+                class="m-4 px-4 relative flex flex-col min-w-0 break-words bg-black shadow-lg rounded opacity-80">
+
+              <div class="flex">
+               
+                <div class="flex justify-start mt-4 mb-4 mx-16">
+                  <div class=" xl:w-96">
+                    <select class="form-select appearance-none
+                      block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-center
+                      font-normal
+                      text-white
+                      bg-transparent bg-clip-padding bg-no-repeat
+                      border border-solid border-gray-300
+                      rounded
+                      transition
+                      ease-in-out
+                      m-0
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example">
+                        <option selected>Seleccionar Capitulos</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="flex justify-center mt-4 mb-4 mx-16">
+                  <div class=" xl:w-96">
+                    <select class="form-select appearance-none
+                      block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-center
+                      font-normal
+                      text-white
+                      bg-transparent bg-clip-padding bg-no-repeat
+                      border border-solid border-gray-300
+                      rounded
+                      transition
+                      ease-in-out
+                      m-0
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example">
+                        <option selected>Mis cursos</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="flex justify-end mt-4 mb-4 mx-16">
+                  <div class=" xl:w-96">
+                    <select class="form-select appearance-none
+                      block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-center
+                      font-normal
+                      text-white
+                      bg-transparent bg-clip-padding bg-no-repeat
+                      border border-solid border-gray-300
+                      rounded
+                      transition
+                      ease-in-out
+                      m-0
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example">
+                        <option selected>Tpo</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                
+              </div>
+              </div>
+              <div
+                class="mt-16 mx-28 p-4 px-4 relative flex flex-col min-w-0 break-words bg-black shadow-lg rounded opacity-80 text-center"> 
+                <div>
+                <h1 class="text-white">Descripcion del capitulo</h1>
+              </div>
             <!-- cards -->
-            <%- include('partials/cards.ejs'); %> 
             <!-- end cards -->
           </div>
+
+          <div
+                class="mt-16 mx-28 p-4 px-4 relative flex flex-col min-w-0 break-words bg-black shadow-lg rounded opacity-80 text-center"> 
+                <div class="flex">
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg p-6">
+                    <img class="w-full" src="/images/Civil.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                      <div class="font-bold text-xl mb-2 text-white">Construcción y Gestión</div>
+                      <p class="text-gray-700 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="/capinscribirse" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Inscribirse</a>
+                    </div>
+                  </div>
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg p-6">
+                    <img class="w-full" src="/images/Civil.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                      <div class="font-bold text-xl mb-2 text-white">Estructuras</div>
+                      <p class="text-gray-700 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="/capinscribirse" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Inscribirse</a>
+                    </div>
+                  </div>
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg p-6">
+                    <img class="w-full" src="/images/Civil.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                      <div class="font-bold text-xl mb-2 text-white">Recursos Hídricos</div>
+                      <p class="text-gray-700 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="/capinscribirse" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Inscribirse</a>
+                    </div>
+                  </div>
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg p-6">
+                    <img class="w-full" src="/images/Civil.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                      <div class="font-bold text-xl mb-2 text-white">Geotecnia</div>
+                      <p class="text-gray-700 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                      </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                      <a href="/capinscribirse" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Inscribirse</a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          
           
         </div>
         <div class="px-4 md:px-10 mx-auto w-full -m-24">
@@ -24,6 +165,7 @@
           <%- include('partials/footer.ejs'); %> 
           <!-- end footer -->
         </div>
+        
       </div>
 <!-- control -->
 <%- include('partials/control.ejs'); %> 
