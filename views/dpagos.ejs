@@ -1,0 +1,233 @@
+      <!-- nav -->
+      <%- include('partials/navbar.ejs'); %> 
+      <!-- end nav -->
+      <div class="relative md:ml-64 bg-blueGray-50">
+        <!-- heard perfil -buscar -->
+        <%- include('partials/perfilBusca.ejs'); %> 
+        <!-- end heard perfil -buscar -->
+        <!-- Header -->
+        <div class="relative  md:pt-32  flex items-start pt-12 pb-56 m-2 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl " style="background-image: url('https://cdlima.org.pe/wp-content/uploads/2021/08/cdlima-1.png')  ">
+          <span class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-cyan-600 opacity-60"></span>
+          <div class="px-4 md:px-10 mx-auto w-full">
+            <!-- cards -->
+            
+            <!-- end cards -->
+          </div>
+          
+        </div>
+        <div class="px-4 md:px-10 mx-auto w-full -m-24">
+          <!-- contenido body1 -->
+          <div class="flex flex-wrap">
+        
+            <div class="w-full xl:w-4/12 px-4">
+              
+            </div>
+          </div>
+          <!-- contenido body 2-->
+          <div class="flex flex-wrap mt-4">
+            
+           
+
+            <!-- tables -->
+            <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
+                <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6  shadow-lg rounded">
+                    
+                    <h3 class="font-semibold text-base text-blueGray-700 mx-auto py-3"> DETALLES DE TRAMITE A PAGAR </h3>
+                    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                        <!-- tarjeta -->
+                        <div class="text-center">
+                            <svg role="status" class="inline w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                                <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+                            </svg>
+                        </div>
+                         
+
+                            
+                        <div class="hidden sm:block" aria-hidden="true">
+                            <div class="py-5">
+                                <div class="border-t border-gray-200"></div>
+                            </div>
+                        </div> 
+                        <div>
+                            <h1 class="pl-4 py-4">Detalles de la tarjeta</h1>
+                        </div>
+                            <div class="mt-10 sm:mt-0">
+                                <div class="md:grid md:grid-cols-2 md:gap-6">
+                                  <div class="mt-5 md:mt-0 md:col-span-2">
+                                    <form action="#" method="POST">
+                                        <div class="shadow overflow-hidden sm:rounded-md m-auto">
+                                            <div class="px-2 py-5 bg-white sm:p-6">
+                                                <div class="grid grid-cols-6 gap-6">
+                                                    <div class="col-span-6 sm:col-span-3">
+
+                                                    <label for="first-name" class="block text-sm font-medium text-gray-700">Nombre como se muestra en la tarjeta</label>
+                                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="Alberto mamani esparta">
+                                                    </div>
+                                    
+                                                    <div class="col-span-6 sm:col-span-3">
+                                                        <label for="last-name" class="block text-sm font-medium text-gray-700"> Numero de la tarjeta</label>
+                                                        <input type="number" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="xxxx-xxxx-xxxx-xxxx">
+                                                    </div>
+                                    
+                                                    <div class="col-span-6 sm:col-span-4">
+                                                        <label for="email-address" class="block text-sm font-medium text-gray-700">Correo Electronico</label>
+                                                        <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                    </div>
+                                                        
+                                                    <!-- <div class="col-span-6 sm:col-span-3">
+                                                        <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+                                                        <select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                                            <option>United States</option>
+                                                            <option>Canada</option>
+                                                            <option>Mexico</option>
+                                                        </select>
+                                                    </div> -->
+                                                    <!-- <div class="hidden sm:block" aria-hidden="true">
+                                                        <div class="py-5">
+                                                        <div class="border-t border-gray-200"></div>
+                                                        </div>
+                                                    </div> -->
+                                                    <!-- <div class="col-span-6">
+                                                        <label for="street-address" class="block text-sm font-medium text-gray-700">Street address</label>
+                                                        <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                    </div> -->
+                                                    <!-- <div class="hidden sm:block" aria-hidden="true">
+                                                        <div class="py-5">
+                                                        <div class="border-t border-gray-200"></div>
+                                                        </div>
+                                                    </div> -->
+                                                    <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                                                        <label for="city" class="block text-sm font-medium text-gray-700">CVC</label>
+                                                        <input type="number" name="city" id="city" autocomplete="address-level2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="309">
+                                                    </div>
+                                    
+                                                    <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                                        <label for="region" class="block text-sm font-medium text-gray-700">State / Province</label>
+                                                        <input type="text" name="region" id="region" autocomplete="address-level1" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                    </div>
+                                    
+                                                    <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                                        <label for="postal-code" class="block text-sm font-medium text-gray-700">ZIP / Postal code</label>
+                                                        <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                                                <a type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">PAGAR</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                  </div>
+                                 </div>
+                             </div>
+                            
+                             <!-- <div class="hidden sm:block" aria-hidden="true">
+                                <div class="py-5">
+                                <div class="border-t border-gray-200"></div>
+                                </div>
+                             </div> -->
+                            </div>
+  
+                        <!-- end tarjeta -->
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-full xl:w-4/12 px-4">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
+              >
+                <div class="rounded-t mb-0 px-4 py-3 border-0">
+                  <div class="flex flex-wrap items-center">
+                    <div
+                      class="relative w-full px-4 max-w-full flex-grow flex-1"
+                    >
+                      <h3 class="font-semibold text-base text-blueGray-700">
+                        PAGO POR DEPOSITO
+                      </h3>
+                    </div>
+                    <div
+                      class="relative w-full px-4 max-w-full flex-grow flex-1 text-right"
+                    >
+                      <a class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-2 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                        PAGAR
+                       </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="block w-full overflow-x-auto">
+                  <!-- Projects table -->
+                  <table
+                    class="items-center w-full bg-transparent border-collapse">
+                    <thead class="thead-light">
+                      <tr>
+                        <th
+                          class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                          Referral
+                        </th>
+                        <th
+                          class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+                        >
+                          monto
+                        </th>
+                        <th
+                          class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left min-w-140-px"
+                        ></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
+                        >
+                          colegiado
+                        </th>
+                        <td
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                        >
+                           S/ 1,480
+                        </td>
+                        <td
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                        >
+                          <div class="flex items-center">
+                            <span class="mr-2">60%</span>
+                            <div class="relative w-full">
+                              <div
+                                class="overflow-hidden h-2 text-xs flex rounded bg-red-200"
+                              >
+                                <div
+                                  style="width: 60%"
+                                  class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="p-4 text-justify"> Detalles de las cuetas a pagar adipisicing elit. Amet omnis laboriosam nam praesentium, veniam maiores. Consectetur minima similique possimus, vel magni accusantium laudantium, incidunt eveniet enim est earum dolor quae!</p>
+                    <div class="p-1">
+
+                        <label class="block mb-2 ml-5 text-lg font-medium text-sky-800" for="file_input">Subir voucher</label>
+                        <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file">
+
+                    </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- footer -->
+          <%- include('partials/footer.ejs'); %> 
+          <!-- end footer -->
+        </div>
+      </div>
+<!-- control -->
+<%- include('partials/control.ejs'); %> 
+<!-- end control -->
