@@ -20,6 +20,11 @@ router.get('/cursos', function(req, res, next) {
   res.render('cursos', { title: ' ta cip-puno' });
 });
 
+/* GET home page. */
+router.get('/capacitacion', function(req, res, next) {
+  res.render('capacitacion', { title: ' capacitacion' });
+});
+
 router.post('/dashboard', function(req, res, next) {
   email=req.body.email;
   password=req.body.password;
