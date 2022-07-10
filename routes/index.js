@@ -25,6 +25,10 @@ router.get('/capacitacion', function(req, res, next) {
   res.render('capacitacion', { title: ' capacitacion' });
 });
 
+/* GET home page. */
+router.get('/pagos', function(req, res, next) {
+  res.render('pagos', { title: ' pagos' });
+});
 router.post('/dashboard', function(req, res, next) {
   email=req.body.email;
   password=req.body.password;

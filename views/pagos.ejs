@@ -1,0 +1,373 @@
+      <!-- nav -->
+      <%- include('partials/navbar.ejs'); %> 
+      <!-- end nav -->
+      <div class="relative md:ml-64 bg-blueGray-50">
+        <!-- heard perfil -buscar -->
+        <%- include('partials/perfilBusca.ejs'); %> 
+        <!-- end heard perfil -buscar -->
+        <!-- Header -->
+        <div class="relative  md:pt-32  flex items-start pt-12 pb-56 m-2 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl " style="background-image: url('https://cdlima.org.pe/wp-content/uploads/2021/08/cdlima-1.png')  ">
+          <span class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-cyan-600 opacity-60"></span>
+          <div class="px-4 md:px-10 mx-auto w-full">
+            <!-- cards -->
+            
+            <!-- end cards -->
+          </div>
+          
+        </div>
+        <div class="px-4 md:px-10 mx-auto w-full -m-24">
+          <!-- contenido body1 -->
+          <div class="flex flex-wrap">
+        
+            <div class="w-full xl:w-4/12 px-4">
+              
+            </div>
+          </div>
+          <!-- contenido body 2-->
+          <div class="flex flex-wrap mt-4">
+
+            <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
+                <div class="rounded-t mb-0 px-4 py-3 border-0">
+                  <div class="flex flex-wrap items-center">
+                    <div class="relative w-full px-4 max-w-full flex-grow flex-1">
+                      <h3 class="font-semibold text-base text-blueGray-700">
+                        ¿Que tipo de tramite desea pagar?
+                      </h3>
+                    </div>
+                    <div
+                      class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
+                      <button
+                        class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                        type="button">
+                        PAGAR
+                      </button>
+                    </div>
+                  </div>
+                </div>
+             <!--  -->
+                <div class="rounded-t mb-0 px-4 py-3 border-0">
+                    <div class="flex flex-wrap items-center">
+                      <div class="relative w-full px-4 max-w-full flex-grow flex-1">
+                        
+                        <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">selecciona una opcion</label>
+                        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected="">tramite de ...</option>
+                        <option value="US">tramite colegiatura</option>
+                        <option value="CA">tramite ordinaria</option>
+                        <option value="FR">solicitud</option>
+                        <option value="DE">otros</option>
+                        </select>
+
+                      </div>
+                      <!-- <div
+                        class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
+                        <button
+                          class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                          type="button">
+                          VER
+                        </button>
+                      </div> -->
+                    </div>
+                  </div>
+                <div class="block w-full overflow-x-auto">
+
+                  <!-- Projects table -->
+
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- tables -->
+            <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
+                <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
+                    
+                    <h3>lista de todo los tramiteque dese </h3>
+                    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3">
+                                        Product name
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Color
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Category
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Price
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <span class="sr-only">Edit</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                        Apple MacBook Pro 17"
+                                    </th>
+                                    <td class="px-6 py-4">
+                                        Sliver
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Laptop
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        $2999
+                                    </td>
+                                    <td class="px-6 py-4 text-right">
+                                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                        Microsoft Surface Pro
+                                    </th>
+                                    <td class="px-6 py-4">
+                                        White
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Laptop PC
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        $1999
+                                    </td>
+                                    <td class="px-6 py-4 text-right">
+                                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                        Magic Mouse 2
+                                    </th>
+                                    <td class="px-6 py-4">
+                                        Black
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Accessories
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        $99
+                                    </td>
+                                    <td class="px-6 py-4 text-right">
+                                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-full xl:w-4/12 px-4">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
+              >
+                <div class="rounded-t mb-0 px-4 py-3 border-0">
+                  <div class="flex flex-wrap items-center">
+                    <div
+                      class="relative w-full px-4 max-w-full flex-grow flex-1"
+                    >
+                      <h3 class="font-semibold text-base text-blueGray-700">
+                        DETALLES DE TRAMITE
+                      </h3>
+                    </div>
+                    <div
+                      class="relative w-full px-4 max-w-full flex-grow flex-1 text-right"
+                    >
+                      <button
+                        class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                        type="button"
+                      >
+                        VER
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="block w-full overflow-x-auto">
+                  <!-- Projects table -->
+                  <table
+                    class="items-center w-full bg-transparent border-collapse"
+                  >
+                    <thead class="thead-light">
+                      <tr>
+                        <th
+                          class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+                        >
+                          Referral
+                        </th>
+                        <th
+                          class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+                        >
+                          Visitors
+                        </th>
+                        <th
+                          class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left min-w-140-px"
+                        ></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
+                        >
+                          Facebook
+                        </th>
+                        <td
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                        >
+                          1,480
+                        </td>
+                        <td
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                        >
+                          <div class="flex items-center">
+                            <span class="mr-2">60%</span>
+                            <div class="relative w-full">
+                              <div
+                                class="overflow-hidden h-2 text-xs flex rounded bg-red-200"
+                              >
+                                <div
+                                  style="width: 60%"
+                                  class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
+                        >
+                          Facebook
+                        </th>
+                        <td
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                        >
+                          5,480
+                        </td>
+                        <td
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                        >
+                          <div class="flex items-center">
+                            <span class="mr-2">70%</span>
+                            <div class="relative w-full">
+                              <div
+                                class="overflow-hidden h-2 text-xs flex rounded bg-emerald-200"
+                              >
+                                <div
+                                  style="width: 70%"
+                                  class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-emerald-500"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
+                        >
+                          Google
+                        </th>
+                        <td
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                        >
+                          4,807
+                        </td>
+                        <td
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                        >
+                          <div class="flex items-center">
+                            <span class="mr-2">80%</span>
+                            <div class="relative w-full">
+                              <div
+                                class="overflow-hidden h-2 text-xs flex rounded bg-purple-200"
+                              >
+                                <div
+                                  style="width: 80%"
+                                  class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-500"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
+                        >
+                          Instagram
+                        </th>
+                        <td
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                        >
+                          3,678
+                        </td>
+                        <td
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                        >
+                          <div class="flex items-center">
+                            <span class="mr-2">75%</span>
+                            <div class="relative w-full">
+                              <div
+                                class="overflow-hidden h-2 text-xs flex rounded bg-lightBlue-200"
+                              >
+                                <div
+                                  style="width: 75%"
+                                  class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-lightBlue-500"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
+                        >
+                          twitter
+                        </th>
+                        <td
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                        >
+                          2,645
+                        </td>
+                        <td
+                          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                        >
+                          <div class="flex items-center">
+                            <span class="mr-2">30%</span>
+                            <div class="relative w-full">
+                              <div
+                                class="overflow-hidden h-2 text-xs flex rounded bg-orange-200"
+                              >
+                                <div
+                                  style="width: 30%"
+                                  class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-emerald-500"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- footer -->
+          <%- include('partials/footer.ejs'); %> 
+          <!-- end footer -->
+        </div>
+      </div>
+<!-- control -->
+<%- include('partials/control.ejs'); %> 
+<!-- end control -->
