@@ -34,6 +34,12 @@ router.get('/pagos', function(req, res, next) {
 router.get('/capinscribirse', function(req, res, next) {
   res.render('capinscribirse', { title: ' CapInscripciones' });
 });
+
+/* GET home page. */
+router.get('/miscursos', function(req, res, next) {
+  res.render('miscursos', { title: ' MisCursos' });
+});
+
 router.post('/dashboard', function(req, res, next) {
   email=req.body.email;
   password=req.body.password;

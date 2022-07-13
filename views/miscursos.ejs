@@ -1,0 +1,209 @@
+      <!-- nav -->
+      <%- include('partials/navbar.ejs'); %> 
+      <!-- end nav -->
+      <div class="relative md:ml-64 bg-blueGray-50">
+        <!-- heard perfil -buscar -->
+        <%- include('partials/perfilBusca.ejs'); %> 
+        <!-- end heard perfil -buscar -->
+        <!-- Header -->
+        <div class="relative  md:pt-32  flex items-start pt-12 pb-56 m-2 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl " style="background-image: url('https://cdlima.org.pe/wp-content/uploads/2021/08/cdlima-1.png')  ">
+          <span class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-cyan-600 opacity-60"></span>
+          <div class="mx-auto w-full">
+            <div class="m-4 mx-40 p-5 relative min-w-0 break-words bg-black shadow-lg rounded-xl opacity-80">
+            <div style="grid-template-columns: auto auto auto auto auto; display: grid;" class="text-center mx-auto w-full">
+              <div class="m-4 mx-20 relative p-5 min-w-0 break-words bg-red-500 shadow-lg rounded opacity-100">
+                <button class="bg-white hover:bg-red-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                  Cursos 
+                </button>
+              </div>
+              <div class="m-4 mx-20 relative p-5 min-w-0 break-words bg-orange-500 shadow-lg rounded opacity-100">
+                <button class="bg-white hover:bg-orange-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow ">
+                  Talleres
+                </button>
+              </div>
+              <div class="m-4 mx-20 relative p-5 min-w-0 break-words bg-yellow-500 shadow-lg rounded opacity-100">
+                <button class="bg-white hover:bg-yellow-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                  Seminarios
+                </button>
+              </div>
+              <div class="m-4 mx-20 relative p-5 min-w-0 break-words bg-lime-500 shadow-lg rounded opacity-100">
+                <button class="bg-white hover:bg-lime-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                  Conferencias
+                </button>
+              </div>
+              <div class="m-4 mx-20 relative p-5 min-w-0 break-words bg-teal-500 shadow-lg rounded opacity-100">
+                <button class="bg-white hover:bg-teal-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                  Otros
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style="grid-template-columns: auto auto auto; display: grid;">
+              <div class=" mb-12 m-4 mx-10 p-5 mt-28 relative min-w-0 break-words bg-white shadow-lg rounded-xl opacity-100">
+                <div class="m-5 p-2 relative min-w-0 break-words bg-black  shadow-lg rounded opacity-100 ">
+                  <img class="w-full" src="/images/Civil.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2 text-white">Construcción y Gestión</div>
+                    <p class="text-gray-700 text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                  </div>
+                  <div class="mx-48 p-2 bg-red-600 rounded-md">
+                    <h4 class="text-white text-center text-xl">Detalles</h4>
+                  </div>
+                </div>
+              </div>
+              
+              <div class=" mb-12 m-4 mx-10 p-5 mt-28 relative min-w-0 break-words bg-white shadow-lg rounded-xl opacity-100">
+                <div
+                class="mt-8 mx-5 p-3 px-4 relative min-w-0 break-words bg-white shadow-xl rounded opacity-100 text-center"> 
+                <div class="">
+                  <div class="mb-3 xl:w-96">
+                    <label for="exampleFormControlInput1" class="form-label inline-block mb-2 text-black"
+                      >Ponente:</label
+                    >
+                    <input type="text" class="form-control block w-full px-3 py-1.5 text-base font-normal
+                        text-gray-700
+                        bg-white bg-clip-padding
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                      "
+                      id="exampleFormControlInput1"
+                      placeholder="Obligatorio*"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-8 mx-5 p-3 px-4 relative min-w-0 break-words bg-white shadow-xl rounded opacity-100 text-center"> 
+                <div class="">
+                  <div class="mb-3 xl:w-96">
+                    <label for="exampleFormControlInput1" class="form-label inline-block mb-2 text-black"
+                      >Módulos:</label
+                    >
+                    <input type="text" class="form-control block w-full px-3 py-1.5 text-base font-normal
+                        text-gray-700
+                        bg-white bg-clip-padding
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                      "
+                      id="exampleFormControlInput1"
+                      placeholder="Obligatorio*"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-8 mx-5 p-3 px-4 relative min-w-0 break-words bg-white shadow-xl rounded opacity-100 text-center"> 
+                <div class="">
+                  <div class="mb-3 xl:w-96">
+                    <label for="exampleFormControlInput1" class="form-label inline-block mb-2 text-black"
+                      >Duración:</label
+                    >
+                    <input type="text" class="form-control block w-full px-3 py-1.5 text-base font-normal
+                        text-gray-700
+                        bg-white bg-clip-padding
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                      "
+                      id="exampleFormControlInput1"
+                      placeholder="Obligatorio*"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-8 mx-5 p-3 px-4 relative min-w-0 break-words bg-white shadow-xl rounded opacity-100 text-center"> 
+                <div class="">
+                  <div class="mb-3 xl:w-96">
+                    <label for="exampleFormControlInput1" class="form-label inline-block mb-2 text-black"
+                      >Fecha inicio:</label
+                    >
+                    <input type="text" class="form-control block w-full px-3 py-1.5 text-base font-normal
+                        text-gray-700
+                        bg-white bg-clip-padding
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                      "
+                      id="exampleFormControlInput1"
+                      placeholder="Obligatorio*"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-8 mx-5 p-3 px-4 relative min-w-0 break-words bg-white shadow-xl rounded opacity-100 text-center"> 
+                <div class="">
+                  <div class="mb-3 xl:w-96">
+                    <label for="exampleFormControlInput1" class="form-label inline-block mb-2 text-black"
+                      >link de acceso:</label
+                    >
+                    <input type="text" class="form-control block w-full px-3 py-1.5 text-base font-normal
+                        text-gray-700
+                        bg-white bg-clip-padding
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                      "
+                      id="exampleFormControlInput1"
+                      placeholder="Obligatorio*"
+                    />
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div  class="m-4 mx-10 p-5 mt-28 relative min-w-0 break-words bg-white shadow-lg rounded-xl opacity-100 ">
+                <div class="m-5 p-2 relative min-w-0 break-words bg-black  shadow-lg rounded opacity-100 ">
+                  <img class="w-full" src="/images/horario.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                    
+                  </div>
+              
+                </div>
+            </div>
+            </div>
+          </div>
+            <!-- cards -->
+            
+            <!-- end cards -->
+          </div>
+          
+        </div>
+        <div class="px-4 md:px-10 mx-auto w-full -m-24">
+          <!-- contenido body1 -->
+          
+          <!-- contenido body 2-->
+          <div class="flex flex-wrap mt-4">
+            
+            
+          </div>
+
+          <!-- footer -->
+          <%- include('partials/footer.ejs'); %> 
+          <!-- end footer -->
+        </div>
+      </div>
+<!-- control -->
+<%- include('partials/control.ejs'); %> 
+<!-- end control -->
