@@ -1,38 +1,28 @@
-      <!-- nav -->
-      <%- include('partials/navbar.ejs'); %> 
+     <!-- head -->
+     <%- include('../partials/head.ejs'); %> 
+     <!-- end head -->
+     <!-- nav -->
+      <%- include('../partials/navbar.ejs'); %> 
       <!-- end nav -->
       <div class="relative md:ml-64 bg-blueGray-50">
         <!-- heard perfil -buscar -->
-        <%- include('partials/perfilBusca.ejs'); %> 
+        <%- include('../partials/perfilBusca2.ejs'); %> 
         <!-- end heard perfil -buscar -->
+        <script src="https://cdn.tailwindcss.com"></script>
         <!-- Header -->
-        <div class="relative  md:pt-32  flex items-start pt-12 pb-56 m-2 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl " style="background-image: url('https://cdlima.org.pe/wp-content/uploads/2021/08/cdlima-1.png')  ">
+        <div class="relative  md:pt-32  flex items-start pt-12 pb-56 m-2 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl " style="background-image: url('https://cdlima.org.pe/wp-content/uploads/2021/08/cdlima-1.png') ">
           <span class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-cyan-600 opacity-60"></span>
-          <div class="px-4 md:px-10 mx-auto w-full">
-            <!-- cards -->
-            
-            <!-- end cards -->
-          </div>
-          
         </div>
-        <div class="px-4 md:px-10 mx-auto w-full -m-24">
-          <!-- contenido body1 -->
-          <div class="flex flex-wrap">
-        
-            <div class="w-full xl:w-4/12 px-4">
-              
-            </div>
-          </div>
+         <div class="px-4 md:px-10 mx-auto w-full -m-60">
+          
           <!-- contenido body 2-->
           <div class="flex flex-wrap mt-4">
-            
-           
-
+          
             <!-- tables -->
             <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
                 <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6  shadow-lg rounded">
                     
-                    <h3 class="font-semibold text-base text-blueGray-700 mx-auto py-3"> DETALLES DE TRAMITE A PAGAR </h3>
+                    <h3 class="font-semibold text-base text-blueGray-700 text-center py-3"> DETALLES DE TRAMITE A PAGAR </h3>
                     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
                         <!-- tarjeta -->
                         <div class="text-center">
@@ -50,8 +40,16 @@
                             </div>
                         </div> 
                         <div>
-                            <h1 class="pl-4 py-4">Detalles de la tarjeta</h1>
+                          <h1 class="pl-4 py-4">Detalles de la tarjeta</h1>
+                      </div>
+                        <!-- detalles -->
+                        <div class="mb-5 ml-4">
+                          <label for="type1" class="flex items-center cursor-pointer">
+                              <input type="radio" class="form-radio h-5 w-5 text-indigo-500" name="type" id="type1" checked>
+                              <img src="https://leadershipmemphis.org/wp-content/uploads/2020/08/780370.png" class="h-6 ml-3">
+                          </label>
                         </div>
+                        
                             <div class="mt-10 sm:mt-0">
                                 <div class="md:grid md:grid-cols-2 md:gap-6">
                                   <div class="mt-5 md:mt-0 md:col-span-2">
@@ -72,7 +70,7 @@
                                     
                                                     <div class="col-span-6 sm:col-span-4">
                                                         <label for="email-address" class="block text-sm font-medium text-gray-700">Correo Electronico</label>
-                                                        <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                        <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="hola@gmail.com">
                                                     </div>
                                                         
                                                     <!-- <div class="col-span-6 sm:col-span-3">
@@ -103,13 +101,13 @@
                                                     </div>
                                     
                                                     <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                                                        <label for="region" class="block text-sm font-medium text-gray-700">State / Province</label>
-                                                        <input type="text" name="region" id="region" autocomplete="address-level1" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                        <label for="region" class="block text-sm font-medium text-gray-700">Fecha de caducidad</label>
+                                                        <input type="date" name="region" id="region" autocomplete="address-level1" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                                                     </div>
                                     
                                                     <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                                                         <label for="postal-code" class="block text-sm font-medium text-gray-700">ZIP / Postal code</label>
-                                                        <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                        <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="15003">
                                                     </div>
                                                     <div>
                                                         
@@ -222,12 +220,11 @@
               </div>
             </div>
           </div>
-
           <!-- footer -->
-          <%- include('partials/footer.ejs'); %> 
+          <%- include('../partials/footer.ejs'); %> 
           <!-- end footer -->
         </div>
       </div>
 <!-- control -->
-<%- include('partials/control.ejs'); %> 
+<%- include('../partials/control.ejs'); %> 
 <!-- end control -->

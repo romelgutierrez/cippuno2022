@@ -16,29 +16,16 @@ router.get('/dashboard', function(req, res, next) {
 });
 
 /* GET home page. */
-router.get('/cursos', function(req, res, next) {
-  res.render('cursos', { title: ' ta cip-puno' });
-});
-
-/* GET home page. */
 router.get('/capacitacion', function(req, res, next) {
   res.render('capacitacion', { title: ' capacitacion' });
 });
 
-/* GET home page. */
-router.get('/pagos', function(req, res, next) {
-  res.render('pagos', { title: ' pagos' });
+/* GET detalles pagos. */
+router.get('/perfil', function(req, res, next) {
+  res.render('perfil', { title: ' pagos' });
 });
 
-/* GET detalles pagos. */
-router.get('/dpagos', function(req, res, next) {
-  res.render('dpagos', { title: ' pagos' });
-});
 
-/* GET detalles pagos. */
-router.get('/validar pag', function(req, res, next) {
-  res.render('dpagos', { title: ' pagos' });
-});
 
 router.post('/dashboard', function(req, res, next) {
   email=req.body.email;

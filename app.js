@@ -4,9 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 // agregar todo las rutas
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
+var cursosRouter = require('./routes/cursos');
+var pagosRouter = require('./routes/pagos');
 var app = express();
 
 // view engine setup
@@ -40,6 +42,8 @@ var connection  = require('./lib/db');
 // agregar toda las rutas 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/cursos', cursosRouter);
+app.use('/pagos', pagosRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

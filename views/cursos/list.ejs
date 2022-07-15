@@ -1,0 +1,351 @@
+     <!-- head -->
+     <%- include('../partials/head.ejs'); %> 
+     <!-- end head -->
+     <!-- nav -->
+      <%- include('../partials/navbar.ejs'); %> 
+      <!-- end nav -->
+      <div class="relative md:ml-64 bg-blueGray-50">
+        <!-- heard perfil -buscar -->
+        <%- include('../partials/perfilBusca.ejs'); %> 
+        <!-- end heard perfil -buscar -->
+        <!-- Header -->
+          <div class="relative  md:pt-32  flex items-start pt-12 pb-56 m-2 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl " style="background-image: url('https://cdlima.org.pe/wp-content/uploads/2021/08/cdlima-1.png')  ">
+            <span class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-cyan-600 opacity-60"></span>
+          </div>
+    
+          <!-- contenido body 2-->
+           <div class="flex flex-wrap mt-4">
+                      <div class="w-full xl:w-8/12 mx-auto -mb-40  xl:mb-0 px-4 ">
+                        <div style="margin-top: -199px" class="relative flex flex-col min-w-0 break-words bg-white w-full shadow-lg rounded " >
+                          <div class="rounded-t mb-0 px-4 py-3 border-0">
+                            <div class="flex flex-wrap items-center">
+                              <div class="relative w-full px-4 max-w-full flex-grow flex-1">
+                                <h3 class="font-semibold text-base text-blueGray-700">
+                                  Lista de todo los capitulos
+                                </h3>
+                              </div>
+                              <div
+                                class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
+                                <a href="../cursos/add"
+                                  class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-2 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                  type="button">
+                                  AGREGAR CAPITULOS
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                       <!--  -->
+                          <div class="rounded-t mb-0 px-4 py-3 border-0">
+                              <div class="flex flex-wrap items-center">
+                                <div class="relative w-full px-4 max-w-full flex-grow flex-1">
+                              
+                                  <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Seleccione un capitulo para filtrar</label>
+                                  <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option selected="">Capítulo de Ingenieros de Minas</option>
+                                    <option value="US">Capítulo de Ingenieros Agrónomos</option>
+                                    <option value="CA">Capítulo de Ingenieros Ambientales</option>
+                                    <option value="FR">Capítulo de Ingenieros Civiles</option>
+                                    <option value="DE">Capítulo de Ingenieros de Sistemas, Computación e InformáticaPago tesis</option>
+                                  </select>
+          
+          
+                                </div>
+                                <!-- <div
+                                  class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
+                                  <button
+                                    class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                    type="button">
+                                    VER
+                                  </button>
+                                </div> -->
+                              </div>
+                            </div>
+                          <div class="block w-full overflow-x-auto">
+          
+                            <!-- Projects table -->
+          
+                            
+                          </div>
+                        </div>
+                      </div>
+ 
+                         <!-- lista de todo  -->
+
+                         
+              </div>
+                 <!-- component -->
+                 <div class="bg-white p-8 rounded-md w-full">
+                  <div class=" flex items-center justify-between pb-6">
+                    <div>
+                      <h2 class="text-gray-600 font-semibold">Todo los cursos y capacitacion</h2>
+                      <span class="text-xs">All products item</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <!-- <div class="flex bg-gray-50 items-center p-2 rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20"
+                          fill="currentColor">
+                          <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd" />
+                        </svg>
+                        <input class="bg-gray-50 outline-none ml-1 block " type="text" name="" id="" placeholder="Buscar">
+                      </div> -->
+                          <!-- component -->
+
+
+                                <!-- This is an example component -->
+                                <div class="max-w-2xl mx-auto">
+
+                                  <form class="flex items-center">   
+                                        <label for="voice-search" class="sr-only">Search</label>
+                                        <div class="relative w-full">
+                                            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                                            </div>
+                                            <input type="text" id="voice-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Buscar curos  y/o capacitacion..." required>
+                                            <button type="button" class="flex absolute inset-y-0 right-0 items-center pr-3">
+                                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd"></path></svg>
+                                            </button>
+                                        </div>
+                                        <button type="submit" class="inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-blue-400 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><svg class="mr-2 -ml-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>Buscar</button>
+                                    </form>
+                                    
+                                </div>
+
+                        <div class="lg:ml-40 ml-10 space-x-8">
+                          <!-- <button class="bg-indigo-600 px-4 py-2 rounded-md text-white font-semibold tracking-wide cursor-pointer">Nen reporte</button> -->
+                          <a href="/cursos/add" class="bg-indigo-600 px-4 py-2 rounded-md text-white font-semibold tracking-wide cursor-pointer">AGREGAR CURSO</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
+                        <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
+                          <table class="min-w-full leading-normal">
+                            <thead>
+                              <tr>
+                                <th
+                                  class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                  Name
+                                </th>
+                                <th
+                                  class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                  products
+                                </th>
+                                <th
+                                  class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                  Created at
+                                </th>
+                                <th
+                                  class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                  QRT
+                                </th>
+                                <th
+                                  class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                  Status
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10">
+                                      <img class="w-full h-full rounded-full"
+                                                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
+                                                                alt="" />
+                                                        </div>
+                                      <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                          Vera Carpenter
+                                        </p>
+                                      </div>
+                                    </div>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <p class="text-gray-900 whitespace-no-wrap">Admin</p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <p class="text-gray-900 whitespace-no-wrap">
+                                    Jan 21, 2020
+                                  </p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <p class="text-gray-900 whitespace-no-wrap">
+                                    43
+                                  </p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <span
+                                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                                                        <span aria-hidden
+                                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
+                                  <span class="relative">Activo</span>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10">
+                                      <img class="w-full h-full rounded-full"
+                                                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
+                                                                alt="" />
+                                                        </div>
+                                      <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                          Blake Bowman
+                                        </p>
+                                      </div>
+                                    </div>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <p class="text-gray-900 whitespace-no-wrap">Editor</p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <p class="text-gray-900 whitespace-no-wrap">
+                                    Jan 01, 2020
+                                  </p>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <p class="text-gray-900 whitespace-no-wrap">
+                                    77
+                                  </p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <span
+                                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                                                        <span aria-hidden
+                                                            class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
+                                  <span class="relative">Activo</span>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10">
+                                      <img class="w-full h-full rounded-full"
+                                                                src="https://images.unsplash.com/photo-1540845511934-7721dd7adec3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
+                                                                alt="" />
+                                                        </div>
+                                      <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                          Dana Moore
+                                        </p>
+                                      </div>
+                                    </div>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <p class="text-gray-900 whitespace-no-wrap">Editor</p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <p class="text-gray-900 whitespace-no-wrap">
+                                    Jan 10, 2020
+                                  </p>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <p class="text-gray-900 whitespace-no-wrap">
+                                    64
+                                  </p>
+                                </td>
+                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                  <span
+                                                        class="relative inline-block px-3 py-1 font-semibold text-orange-900 leading-tight">
+                                                        <span aria-hidden
+                                                            class="absolute inset-0 bg-orange-200 opacity-50 rounded-full"></span>
+                                  <span class="relative">Suspended</span>
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-5 py-5 bg-white text-sm">
+                                  <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10">
+                                      <img class="w-full h-full rounded-full"
+                                                                src="https://images.unsplash.com/photo-1522609925277-66fea332c575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&h=160&w=160&q=80"
+                                                                alt="" />
+                                                        </div>
+                                      <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                          Alonzo Cox
+                                        </p>
+                                      </div>
+                                    </div>
+                                </td>
+                                <td class="px-5 py-5 bg-white text-sm">
+                                  <p class="text-gray-900 whitespace-no-wrap">Admin</p>
+                                </td>
+                                <td class="px-5 py-5 bg-white text-sm">
+                                  <p class="text-gray-900 whitespace-no-wrap">Jan 18, 2020</p>
+                                </td>
+                                <td class="px-5 py-5 bg-white text-sm">
+                                  <p class="text-gray-900 whitespace-no-wrap">70</p>
+                                </td>
+                                <td class="px-5 py-5 bg-white text-sm">
+                                  <span
+                                                        class="relative inline-block px-3 py-1 font-semibold text-red-900 leading-tight">
+                                                        <span aria-hidden
+                                                            class="absolute inset-0 bg-red-200 opacity-50 rounded-full"></span>
+                                  <span class="relative">Inactive</span>
+                                  </span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div
+                            class="px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between          ">
+                            <span class="text-xs xs:text-sm text-gray-900">
+                                            Showing 1 to 4 of 50 Entries
+                                        </span>
+                            <div class="inline-flex mt-2 xs:mt-0">
+                              <button
+                                                class="text-sm text-indigo-50 transition duration-150 hover:bg-indigo-500 bg-indigo-600 font-semibold py-2 px-4 rounded-l">
+                                                Prev
+                                            </button>
+                              &nbsp; &nbsp;
+                              <button
+                                                class="text-sm text-indigo-50 transition duration-150 hover:bg-indigo-500 bg-indigo-600 font-semibold py-2 px-4 rounded-r">
+                                                Next
+                                            </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+               <!-- en lista de todos -->
+               </div>
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script type="text/javascript">
+      /* Make dynamic date appear */
+      (function () {
+        if (document.getElementById("get-current-year")) {
+          document.getElementById(
+            "get-current-year"
+          ).innerHTML = new Date().getFullYear();
+        }
+      })();
+      /* Sidebar - Side navigation menu on mobile/responsive mode */
+      function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("bg-white");
+        document.getElementById(collapseID).classList.toggle("m-2");
+        document.getElementById(collapseID).classList.toggle("py-3");
+        document.getElementById(collapseID).classList.toggle("px-6");
+      }
+      /* Function for dropdowns */
+      function openDropdown(event, dropdownID) {
+        let element = event.target;
+        while (element.nodeName !== "A") {
+          element = element.parentNode;
+        }
+        Popper.createPopper(element, document.getElementById(dropdownID), {
+          placement: "bottom-start",
+        });
+        document.getElementById(dropdownID).classList.toggle("hidden");
+        document.getElementById(dropdownID).classList.toggle("block");
+      }
+    </script>
+<!-- control -->
+<%- include('../partials/control.ejs'); %> 
+<!-- end control -->
