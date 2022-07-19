@@ -1,0 +1,307 @@
+     <!-- head -->
+     <%- include('../partials/head.ejs'); %> 
+     <!-- end head -->
+     <!-- nav -->
+      <%- include('../partials/navbar.ejs'); %> 
+      <!-- end nav -->
+      <div class="relative md:ml-64 bg-blueGray-50">
+        <!-- heard perfil -buscar -->
+        <%- include('../partials/perfilBusca2.ejs'); %> 
+        <!-- end heard perfil -buscar -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Header -->
+          <div class="relative  md:pt-32  flex items-start pt-12 pb-56 m-2 overflow-hidden bg-center bg-cover min-h-50-screen rounded-xl " style="background-image: url('https://cdlima.org.pe/wp-content/uploads/2021/08/cdlima-1.png')  ">
+            <span class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-cyan-600 opacity-60"></span>
+          </div>
+    
+          <!-- contenido body 2-->
+           <div class="flex flex-wrap mt-4">
+                      <div class="w-full xl:w-8/12 mx-auto -mb-40  xl:mb-0 px-4 ">
+                        <div style="margin-top: -199px" class="relative flex flex-col min-w-0 break-words bg-white w-full shadow-lg rounded " >
+                          <div class="rounded-t mb-0 px-4 py-3 border-0">
+                            <div class="flex flex-wrap items-center">
+                              <div class="relative w-full px-4 max-w-full flex-grow flex-1">
+                                <h3 class="font-semibold text-base text-blueGray-700">
+                                  Lista de todo los eventos 
+                                </h3>
+                              </div>
+                              <!-- <div
+                                class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
+                                <a href="../cursos/add"
+                                  class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-2 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                  type="button">
+                                  AGREGAR CAPITULOS
+                                </a>
+                              </div> -->
+                            </div>
+                          </div>
+                       <!--  -->
+                          <div class="rounded-t mb-0 px-4 py-3 border-0">
+                              <div class="flex flex-wrap items-center">
+                                <div class="relative w-full px-4 max-w-full flex-grow flex-1">
+                              
+                                  <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Seleccione un capitulo para filtrar</label>
+                                  <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option selected="">todos</option>
+                                    <option value="">Capítulo de Ingenieros de Minas</option>
+                                    <option value="US">Capítulo de Ingenieros Agrónomos</option>
+                                    <option value="CA">Capítulo de Ingenieros Ambientales</option>
+                                    <option value="FR">Capítulo de Ingenieros Civiles</option>
+                                    <option value="DE">Capítulo de Ingenieros de Sistemas, Computación e InformáticaPago tesis</option>
+                                  </select>
+          
+          
+                                </div>
+                                <!-- <div
+                                  class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
+                                  <button
+                                    class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                    type="button">
+                                    VER
+                                  </button>
+                                </div> -->
+                              </div>
+                            </div>
+                            <div class="rounded-t mb-0 px-4 py-3 border-0">
+                              <div class="flex flex-wrap items-center">
+                                <div class="relative w-full px-4 max-w-full flex-grow flex-1">
+                              
+                                  <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Seleccione un tipo de evento</label>
+                                  <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option selected="">todos</option>
+                                    <option value="">Seminarios</option>
+                                    <option value="US">talleres</option>
+                                    <option value="CA">cursos</option>
+                                    <option value="FR">charlas</option>
+                                    <option value="DE">otros</option>
+                                  </select>
+          
+          
+                                </div>
+                              </div>
+                              <div class="relative w-full px-4 pt-1 max-w-full flex-grow flex-1 text-right">
+                                <button  class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                  type="button">
+                                  filtrar
+                                </button>
+                              </div>
+                            </div>
+                          <div class="block w-full overflow-x-auto">
+          
+                            <!-- Projects table -->
+          
+                            
+                          </div>
+                        </div>
+                      </div>
+ 
+                         <!-- lista de todo  -->
+                         <div style="margin-top: -199px" class="w-full xl:w-4/12 px-4">
+                          <div
+                            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded"
+                          >
+                            <div class="rounded-t mb-0 px-4 py-3 border-0">
+                              <div class="flex flex-wrap items-center">
+                                <div
+                                  class="relative w-full px-4 max-w-full flex-grow flex-1"
+                                >
+                                  <h3 class="font-semibold text-base text-blueGray-700">
+                                    Detalles del capitulo seleccionado
+                                  </h3>
+                                </div>
+                                <!-- <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
+                                  <a class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-2 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                                    PAGAR
+                                   </a>
+                                </div> -->
+                              </div>
+                            </div>
+                            <div class="block w-full overflow-x-auto">
+                              <!-- Projects table -->
+                              <table
+                                class="items-center w-full bg-transparent border-collapse">
+                                <thead class="thead-light">
+                                  <tr>
+                                    <th
+                                      class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                      Ingenieria Civil
+                                    </th>
+                                    <th
+                                      class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+                                    >
+                                      Descripcion 
+                                    </th>
+                                    <th
+                                      class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left min-w-140-px"
+                                    ></th>
+                                  </tr>
+                                </thead>
+                                <!-- <tbody>
+                                  <tr>
+                                    <th
+                                      class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left"
+                                    >
+                                      colegiado
+                                    </th>
+                                    <td
+                                      class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                    >
+                                       S/ 1,480
+                                    </td>
+                                    <td
+                                      class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                                    >
+                                      <div class="flex items-center">
+                                        <span class="mr-2">60%</span>
+                                        <div class="relative w-full">
+                                          <div
+                                            class="overflow-hidden h-2 text-xs flex rounded bg-red-200"
+                                          >
+                                            <div
+                                              style="width: 60%"
+                                              class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
+                                            ></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody> -->
+                              </table>
+                              <p class="p-4 text-justify"> El capitulo de Ingenieria Civil congrega a los profecionales formados en los conocimientos cientificos, tecnologicos y humanisticos que les permiten proyectar, conducir, dirigir y crear, por medio de las matematicas aplicadas.</p>
+                                <!-- <div class="p-1">
+            
+                                    <label class="block mb-2 ml-5 text-lg font-medium text-sky-800" for="file_input">Subir voucher</label>
+                                    <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file">
+            
+                                </div>     -->
+                            </div>
+                          </div>
+                        </div>
+                         
+              </div>
+                 <!-- component -->
+                 
+               <!-- en lista de todos -->
+
+               <!-- component -->
+                <div class="bg-gray-100 min-h-screen py-3 px-10 ">
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-10 xl-grid-cols-4 gap-y-10 gap-x-6 "> 
+
+                  <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+                    <img src="https://acarquitectos.com.pe/wp-content/uploads/2020/06/Eschborn-Office-Building-ULMA-1-1-600x400.jpg" alt="" class="rounded-t-lg w-full">
+                  <div class="p-6">
+                    <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">Construcción y Gestión</h1>
+                    <p class="text-gray-700 my-2 hover-text-900 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.</p>
+                    <div class="relative w-full px-4 pt-1 max-w-full flex-grow flex-1 text-center">
+                      <a href="/cursos/create" class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                        type="button">
+                        Registrarse
+                      </a>
+                    </div>
+                  </div>
+                    </div>
+                  <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+                    <img src="https://apnfachadas.com/wp-content/uploads/2020/08/estructuras.png" alt="" class="rounded-t-lg w-full">
+                  <div class="p-6">
+                    <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">Estructuras</h1>
+                    <p class="text-gray-700 my-2 hover-text-900 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.</p>
+                    <div class="relative w-full px-4 pt-1 max-w-full flex-grow flex-1 text-center">
+                      <a href="/cursos/create" class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                        type="button">
+                        Registrarse
+                      </a>
+                    </div>
+                  </div>
+                    </div>
+                  <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+                    <img src="https://apnfachadas.com/wp-content/uploads/2020/08/estructuras.png" alt="" class="rounded-t-lg w-full">
+                  <div class="p-6">
+                    <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">Recursos Hídricos</h1>
+                   <p class="text-gray-700 my-2 hover-text-900 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.</p>
+                   <div class="relative w-full px-4 pt-1 max-w-full flex-grow flex-1 text-center">
+                    <a href="/cursos/create" class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                      type="button">
+                      Registrarse
+                    </a>
+                  </div>
+                  </div>
+                    </div>
+                  <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+                    <img src="https://apnfachadas.com/wp-content/uploads/2020/08/estructuras.png" alt="" class="rounded-t-lg w-full">
+                  <div class="p-6">
+                    <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">Geotecnia</h1>
+                    <p class="text-gray-700 my-2 hover-text-900 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.</p>
+                    <div class="relative w-full px-4 pt-1 max-w-full flex-grow flex-1 text-center">
+                      <a  href="/cursos/create" class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                        type="button">
+                        Registrarse
+                      </a>
+                    </div>
+                  </div>
+                    </div>
+                  <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+                    <img src="https://apnfachadas.com/wp-content/uploads/2020/08/estructuras.png" alt="" class="rounded-t-lg w-full">
+                  <div class="p-6">
+                    <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">This is Amazing for people to visit.</h1>
+                    <p class="text-gray-700 my-2 hover-text-900 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.</p>
+                    <div class="relative w-full px-4 pt-1 max-w-full flex-grow flex-1 text-center">
+                      <a  href="/cursos/create" class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                        type="button">
+                        Registrarse
+                      </a>
+                    </div>
+                  </div>
+                    </div>
+                  <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+                    <img src="https://apnfachadas.com/wp-content/uploads/2020/08/estructuras.png" alt="" class="rounded-t-lg w-full">
+                  <div class="p-6">
+                    <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">This is Amazing for people to visit.</h1>
+                    <p class="text-gray-700 my-2 hover-text-900 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.</p>
+                    <div class="relative w-full px-4 pt-1 max-w-full flex-grow flex-1 text-center">
+                      <a href="/cursos/create" class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                        type="button">
+                        Registrarse
+                      </a>
+                    </div>
+                  </div>
+                    </div>
+
+                    </div>
+                </div>
+          </div>
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script type="text/javascript">
+      /* Make dynamic date appear */
+      (function () {
+        if (document.getElementById("get-current-year")) {
+          document.getElementById(
+            "get-current-year"
+          ).innerHTML = new Date().getFullYear();
+        }
+      })();
+      /* Sidebar - Side navigation menu on mobile/responsive mode */
+      function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("bg-white");
+        document.getElementById(collapseID).classList.toggle("m-2");
+        document.getElementById(collapseID).classList.toggle("py-3");
+        document.getElementById(collapseID).classList.toggle("px-6");
+      }
+      /* Function for dropdowns */
+      function openDropdown(event, dropdownID) {
+        let element = event.target;
+        while (element.nodeName !== "A") {
+          element = element.parentNode;
+        }
+        Popper.createPopper(element, document.getElementById(dropdownID), {
+          placement: "bottom-start",
+        });
+        document.getElementById(dropdownID).classList.toggle("hidden");
+        document.getElementById(dropdownID).classList.toggle("block");
+      }
+    </script>
+<!-- control -->
+<%- include('../partials/control.ejs'); %> 
+<!-- end control -->

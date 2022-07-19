@@ -1,30 +1,17 @@
 var express = require('express');
 var router = express.Router();
+var dbConn  = require('../lib/db');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'login' });
 });
-/* GET home re. */
-router.get('/registrarUser', function(req, res, next) {
-  res.render('registrarUser', { title: 'Registrar colegiado' });
-});
+
 
 /* GET home page. */
 router.get('/dashboard', function(req, res, next) {
   res.render('dashboard', { title: 'cip-puno' });
 });
-
-/* GET home page. */
-router.get('/capacitacion', function(req, res, next) {
-  res.render('capacitacion', { title: ' capacitacion' });
-});
-
-/* GET detalles pagos. */
-router.get('/perfil', function(req, res, next) {
-  res.render('perfil', { title: ' pagos' });
-});
-
 
 
 router.post('/dashboard', function(req, res, next) {
@@ -49,6 +36,11 @@ router.post('/dashboard', function(req, res, next) {
     }
   });
 });
+
+// display listar usuarios
+
+
+
 
 
 module.exports = router;
